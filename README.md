@@ -33,3 +33,4 @@ You need to set up the following directories:
 
 
 ## Credit 
+Source: https://github.com/mscross/pysplit/tree/master/pysplit
