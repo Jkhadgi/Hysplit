@@ -33,39 +33,4 @@ pysplit.generate_bulktraj(basename, working_dir, storage_dir, meteo_dir,
                        get_reverse=True,
                        monthslice = slice(0,11,1), ####0 : a day back from 1 to 11 for each day)
                        #meteo_bookends = ([4,5],[1]),    
-                          hysplit='C:\\hysplit\\exec\\hyts_std') ##change accordingly@author: Jasmita Khadgi
-"""
-from __future__ import division
-import os
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
-os.environ["PROJ_LIB"] = r'C:/Users\DELL\Anaconda3\Lib\site-packages\mpl_toolkits\basemap'
-import subprocess
-ret = subprocess.run(["dir", "/p"], shell=True)
-import pysplit
-
-
-
-working_dir = r'C:/hysplit/working' ###Installed directory of Hysplit###
-storage_dir = r'F:/Air_pollution'   ###directory where trajectories will be stored#####
-meteo_dir = r'F:/GDAS01'
-
-years = [2020] ###Year####
-months = [4]   ###Month of simulation###
-
-hours = [0,6,12,18] ####Hours of run (can extend from 0-23)
-#hours = [18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0,19,20,21,22,23]
-altitudes = [100] ###Altitude above ground level####
-location = (27.71, 85.32)  ###Us Embassy: 27.74, 85.34   ####phora: 27.71, 85.32
-runtime = -168 # 7 days back trajectory
-
-basename = 'GDAS1' ### meteorology data directory###
-
-
-pysplit.generate_bulktraj(basename, working_dir, storage_dir, meteo_dir,
-                          years, months, hours, altitudes, location, runtime,
-                       get_reverse=True,
-                       monthslice = slice(0,11,1), ####0 : a day back from 1 to 11 for each day)
-                       #meteo_bookends = ([4,5],[1]),    
                           hysplit='C:\\hysplit\\exec\\hyts_std') ##change accordingly
