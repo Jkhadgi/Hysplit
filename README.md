@@ -4,7 +4,7 @@
 This Python script generates back trajectories using HYSPLIT (Hybrid Single-Particle Lagrangian Integrated Trajectory) model through the PySPLIT interface. 
 
 ## Features
-- Generates 7-day back trajectories using GDAS1 meteorological data
+- Generates x-day back trajectories using GDAS1 meteorological data
 - Configurable for multiple years, months, and starting hours
 - Customizable trajectory heights and locations
 - Automated batch processing of multiple trajectories
